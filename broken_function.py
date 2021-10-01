@@ -89,7 +89,7 @@ def dd(img):
         
         cv2.drawContours(img,[cnt],0,(0,255,0),1)   # draw contours in green color
     #print([cnt])
-        cv2.ellipse(img,ellipse,(0,255,0),1)        # draw ellipse in blue color
+        cv2.ellipse(img,ellipse,(255,0,0),1)        # draw ellipse in blue color
         cv2.polylines(img,[points],True,(0,0,255),1)# draw rectangle in red color
         length=(ellipse[1][1])     
         Area=(ellipse[1][0]*ellipse[1][1])
